@@ -1,0 +1,88 @@
+
+.testimonial-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    
+}
+
+.testimonial {
+    margin: 15px 5px 15px;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 3px 3px 5px hsla(217, 19%, 35%, 0.2);
+}
+
+.violet {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(210, 46%, 95%);
+}
+
+.gray {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.white {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+.black {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(210, 46%, 95%);
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.white {
+    color: hsl(217, 19%, 35%);
+}
+
+.testi-text {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+
+.white .testi-text {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.intro {
+    padding-left: 20px;
+}
+
+.designation {
+    color: hsla(210, 46%, 95%, 0.5)
+}
+
+.white .designation {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.profile-img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: hsla(210, 46%, 95%, 0.5);
+}
+
+.quote-image {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    z-index: 1;
+}
+
+.over-the-quote {
+    position: relative;
+    z-index: 2;
+}
+
+
+  
