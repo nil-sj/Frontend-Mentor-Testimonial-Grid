@@ -1,36 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-.testimonial-block {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.testimonial-section {
     background-color: hsl(0, 0%, 81%);
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
-    
+    flex: 1 1 auto;
+    /* reference:  https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-block {
+    padding: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .testimonial {
-    margin: 15px 5px 15px;
     border-radius: 10px;
     padding: 30px 30px 30px 30px;
     box-shadow: 3px 3px 5px hsla(217, 19%, 35%, 0.2);
 }
 
-.violet {
-    background-color: hsl(263, 55%, 52%);
-    color: hsl(210, 46%, 95%);
+.t-one {
+    grid-column-end: span 2;
 }
 
-.gray {
+.t-three {
+    grid-row-end: span 2;
+}
+
+.t-five {
+    grid-column-end: span 2;
+}
+
+.violet-bg {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(210, 46%, 95%);
+    position: relative;
+}
+
+.gray-bg {
     background-color: hsl(217, 19%, 35%);
     color: hsl(210, 46%, 95%);
 }
 
-.white {
+.white-bg {
     background-color: hsl(0, 0%, 100%);
-    color: black;
+    color: hsl(217, 19%, 35%);
 }
 
-.black {
+.black-bg {
     background-color: hsl(219, 29%, 14%);
     color: hsl(210, 46%, 95%);
 }
@@ -40,15 +69,11 @@ h4 {
     margin: 20px 0;
 }
 
-.white {
-    color: hsl(217, 19%, 35%);
-}
-
 .testi-text {
     color: hsla(210, 46%, 95%, 0.7);
 }
 
-.white .testi-text {
+.white-bg .testi-text {
     color: hsla(217, 19%, 35%, 0.7);
 }
 
@@ -60,7 +85,7 @@ h4 {
     color: hsla(210, 46%, 95%, 0.5)
 }
 
-.white .designation {
+.white-bg .designation {
     color: hsla(217, 19%, 35%, 0.5);
 }
 
@@ -74,7 +99,7 @@ h4 {
 
 .quote-image {
     position: absolute;
-    top: 15px;
+    top: 0;
     right: 100px;
     z-index: 1;
 }
@@ -83,6 +108,3 @@ h4 {
     position: relative;
     z-index: 2;
 }
-
-
-  
